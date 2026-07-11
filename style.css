@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#0d6efd;
+}
+
+.top{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.top input{
+    flex:1;
+}
+
+input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.top button{
+    background:#0d6efd;
+    color:white;
+}
+
+.top button:hover{
+    background:#084298;
+}
+
+.searchBox{
+    margin-bottom:20px;
+}
+
+.searchBox input{
+    width:100%;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8f9fa;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:6px;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.actions button{
+    margin-left:5px;
+}
+
+.completeBtn{
+    background:#198754;
+    color:white;
+}
+
+.editBtn{
+    background:#ffc107;
+}
+
+.deleteBtn{
+    background:#dc3545;
+    color:white;
+}
+
+@media(max-width:600px){
+
+.top{
+    flex-direction:column;
+}
+
+li{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.actions{
+    margin-top:10px;
+}
+
+}
